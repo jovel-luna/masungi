@@ -1,6 +1,11 @@
 # Laravel Boilerplate
 
 ### Installation Guide
+#### Pre Requisites
+Composer Version 2.6.5
+Nodejs Version 16.20.2
+PHP Version 7.4.30
+
 Copy .env.example for values basis
 
 Run the following commands
