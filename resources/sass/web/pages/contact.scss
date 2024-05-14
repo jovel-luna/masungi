@@ -1,0 +1,99 @@
+/*=================================================================================
+|                                Contact Styling                                  |
+=================================================================================*/
+.contact-fr1 {
+
+	input {
+		width: 100%;
+	}
+
+	textarea {
+		width: 100%;
+		height: 105px;
+	}
+}
+
+.contact-fr2 {
+
+	.width--40 {
+		padding-right: 2%;
+
+		&.page-general {
+
+			i {
+				min-width: 13px;
+				vertical-align: top;
+				color: $color-primary1;
+				margin-right: 10px;
+				margin-top: 7px;
+			}
+		}
+	}
+
+	.width--60 {
+		/*height: 300px;
+		padding-left: 2%;
+		background-color: red;*/
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+	.contact-fr1 {
+
+		.width--90 {
+			width: 100%;
+		}
+
+		.page-general {
+			width: 100%;
+		}
+	}
+
+	.contact-fr2 {
+
+		.width--90 {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.contact-fr1 {
+
+		.width--50 {
+			width: 100%;
+			padding: 0;
+
+			&:nth-child(2n) {
+				padding: 0;
+			}
+		}
+	}
+
+	.contact-fr2 {
+		padding-bottom: 0;
+
+		.page-container {
+			width: 100%;
+		}
+
+		.width--60 {
+			display: block;
+			width: 100%;
+			padding: 0;
+		}
+
+		.width--40 {
+			display: block;
+			width: 90%;
+			padding: 0;
+			margin: auto auto 40px;
+		}
+	}
+}

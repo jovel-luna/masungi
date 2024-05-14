@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'perpetuaregular';
+    src: url('perpetua-webfont.woff2') format('woff2'),
+         url('perpetua-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'perpetuabold';
+    src: url('perpetua-bold-webfont.woff2') format('woff2'),
+         url('perpetua-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

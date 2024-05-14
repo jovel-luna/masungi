@@ -1,0 +1,24 @@
+1,05:30:00,Weekdays,0
+1,06:30:00,Weekdays,1
+1,07:20:00,Weekdays,2
+1,08:20:00,Weekdays,3
+1,09:30:00,Weekdays,4
+1,06:00:00,Weekdays,5
+1,07:00:00,Weekdays,6
+1,08:00:00,Weekdays,7
+1,09:00:00,Weekdays,8
+1,10:00:00,Weekdays,9
+1,10:30:00,Weekdays,10
+1,11:00:00,Weekdays,11
+1,11:30:00,Weekdays,12
+2,12:00:00,Weekdays,13
+2,12:30:00,Weekdays,14
+1,07:40:00,Weekdays,15
+1,08:40:00,Weekdays,16
+2,13:00:00,Weekdays,17
+2,13:30:00,Weekdays,18
+2,14:00:00,Weekend & Holidays,19
+2,14:30:00,Weekend & Holidays,20
+2,15:00:00,Weekend & Holidays,21
+2,15:30:00,Weekend & Holidays,22
+2,16:00:00,Weekend & Holidays,23

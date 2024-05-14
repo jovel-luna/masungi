@@ -1,0 +1,10 @@
+[28-Sep-2022 18:49:22 Asia/Manila] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 127930368 bytes) in /home/ut0jpr8qv7gs/public_html/app/Traits/Curl.php on line 52
+[31-Aug-2023 21:03:29 UTC] PHP Warning:  parse_str(): Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in /home/ut0jpr8qv7gs/public_html/vendor/symfony/http-foundation/Request.php on line 298
+[14-Feb-2024 08:41:55 Asia/Manila] PHP Fatal error:  Uncaught ErrorException: Array to string conversion in /home/ut0jpr8qv7gs/public_html/app/Http/Controllers/PaymentController.php:56
+Stack trace:
+#0 /home/ut0jpr8qv7gs/public_html/app/Http/Controllers/PaymentController.php(56): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Array to string...', '/home/ut0jpr8qv...', 56, Array)
+#1 [internal function]: App\Http\Controllers\PaymentController->createOrder(Object(Illuminate\Http\Request))
+#2 /home/ut0jpr8qv7gs/public_html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#3 /home/ut0jpr8qv7gs/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\Routing\Controller->callAction('createOrder', Array)
+#4 /home/ut0jpr8qv7gs/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(219): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(App\Http\Controllers\PaymentController), 'createOrder')
+#5 /home/u in /home/ut0jpr8qv7gs/public_html/app/Http/Controllers/PaymentController.php on line 56

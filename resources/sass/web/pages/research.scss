@@ -1,0 +1,98 @@
+/*=================================================================================
+|                               Research Styling                                  |
+=================================================================================*/
+.research-fr2 {
+
+	.research-fr2__imageCon {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-top: 65%;
+		overflow: hidden;
+
+		&:hover {
+
+			.research-fr2__imgCon {
+
+				transform: scale(1.1);
+
+				&::after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	.research-fr2__imgCon {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		@extend %bg-center-cover-nr;
+		@extend %trans-ease;
+
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 2;
+			display: block;
+			content: '';
+			width: 100%;
+			height: 100%;
+			background-color: rgba(201, 152, 26, 0.5);
+			opacity: 0;
+			@extend %trans-ease;
+		}
+
+		
+	}
+
+	.width--50 {
+		margin-bottom: 70px;
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+	.research-fr1 {
+
+		.width--90 {
+			width: 100%;
+		}
+
+		.page-general {
+			width: 100%;
+		}
+	}
+
+	.research-fr2 {
+
+		.width--90 {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.research-fr2 {
+
+		.page-general > .width--50 {
+			width: 100%;
+
+			&:nth-child(2n) {
+				padding-left: 0;
+			}
+
+			&:nth-child(2n-1) {
+				padding-right: 0;
+			}
+		}
+	}
+}

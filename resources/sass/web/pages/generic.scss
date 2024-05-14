@@ -1,0 +1,78 @@
+/*=================================================================================
+|                                 Generic Styling                                 |
+=================================================================================*/
+.general-fr1 {
+
+	ul {
+		display: block;
+
+		li {
+			position: relative;
+			padding-left: 20px;
+
+			&:before {
+				position: absolute;
+				left: 5px;
+				top: 10px;
+				display: inline-block;
+				content:"";
+				width: 6px;
+				height: 6px;
+				margin-right: 15px;
+				background-color: $color-primary1;
+				border-radius: 50%;
+			}
+		}
+	}
+
+	ol {
+		padding-left: 20px;
+
+		li {
+			display: list-item;
+		}
+	}
+
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+	.general-fr1 {
+
+		.width--90 {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.general-fr1 {
+
+		.page-container .page-innerFrame__title {
+			margin-bottom: 60px;
+
+			h1 {
+				position: relative;
+				padding: 0 40px;
+				margin-bottom: 0;
+
+				&::after {
+					position: absolute;
+					right: 30px;
+					top: 50%;
+				}
+
+				&::before {
+					position: absolute;
+					left: 30px;
+					top: 50%;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+@media screen and (max-width: 1024px) {
+
+	.page-lastFrame {
+		padding-bottom: 70px;
+	}
+
+	.page-sideNav {
+		border-right: unset;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.page-innerFrame {
+		padding: 40px 0;
+	}
+
+	.page-frame {
+		padding: 40px 0;
+	}
+
+	.page-lastFrame {
+		padding-bottom: 70px
+	}
+
+	.cstm-pagination {
+		max-width: unset;
+		justify-content: space-between;
+
+		.pagination-page-nav {
+			display: none;
+		}
+
+		.pagination-prev-nav, .pagination-next-nav {
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	/*=================================================================================
+	|                                 General Styling                                 |480
+	=================================================================================*/
+	.cstm-dialog {
+
+		&.type-1, &.type-2 {
+			width: 90%;
+		}
+	}
+
+}
+
+@media screen and (max-width: 320px) {
+
+	/*=================================================================================
+	|                                 General Styling                                 |320
+	=================================================================================*/
+	.page-innerFrame__title h1::before, .page-innerFrame__title h1::after {
+		display: none;
+	}
+
+}

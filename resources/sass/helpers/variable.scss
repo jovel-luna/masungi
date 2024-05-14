@@ -1,0 +1,58 @@
+/*=================================================================================
+|                                    VARIABLES                                    |
+=================================================================================*/
+
+//Primary Colors
+$color-primary1: #675F3A;		//Bark Color | Button Inactive
+$color-primary2: #C9981A;		//Yellow | Button Active
+$color-primary3: #121212;		//Default Black Text
+$color-primary4: #A8A8A8;		//Default Gray Text
+
+//Secondary Colors
+$color-white: #FFFFFF;			//White
+$color-black: #000000;			//Black
+$color-gray: #AEAEAE;			//Black | Inactive Form
+$color-lighterGray: #969696;	//Lighter Gray | News Date
+$color-lightestGray: #d0d0d0;
+//$color-red: #E21B1B;			//Red
+$color-red: #911919;
+$color-dullWhite: #FAFAFA;		//Background Color
+
+//Tertiary Colors
+$color-tertiary1: #4E5B35;		//Moss
+$color-tertiary2: #4FAA43;		//Green
+$color-tertiary3: #93827F;		//Dark Gray
+$color-tertiary4: #F3F9D2;		//Yellowish White
+$color-tertiary5: #676036;		//Bark | Other Button Color
+
+
+//Font Family
+$font-primary: 'open_sanslight', sans-serif;		//H5 | Paragraph Text
+$font-secondary: 'open_sansregular', sans-serif;	//Navigation, Frame Subtitle, Footer, Button
+$font-tertiary: 'perpetuaregular', serif;			//H1 | Frame Title
+
+
+//Font Size
+$font-size-default: 1rem;		//Default, Button | 13px
+$font-size-largest: 2.692rem;	//H1, Frame Title | 35px
+$font-size-larger: 1.385rem;	//H2, Frame Subtitle | 18px
+$font-size-large: 1.154rem;		//H3, Navigation | 15px
+$font-size-medium: 1.077rem;	//H4, 14px
+$font-size-small: 1rem;			//H5, 13px
+$font-size-smaller: 0.923rem;	//H6 | Small, Footer, Input | 12px
+
+
+//Border-Radius
+$border-radius-default: 2px;	//
+//$border-radius-20: 20px;		//
+//$border-radius-4: 4px;		//
+
+
+//z-index notes
+//0-5 		- Background elements
+//6-10	 	- Midground elements
+//11-15		- Foreground elements
+//90		- Elements that includes Header
+//100		- Header
+//120		- Header Side Nav
+//150		- Modals | Pop Up 

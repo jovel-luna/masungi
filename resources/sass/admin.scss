@@ -1,0 +1,24 @@
+.dg-btn--ok {
+    color: #ffffff;
+    background-color: #0096D9;
+    border-color: #0096D9;
+}
+.dg-btn--cancel {
+    color: #0096D9;
+    background-color: #ffffff;
+    border-color: #0096D9;
+}
+
+/*=================================================================================
+|                               Data Table Styling                                |
+=================================================================================*/
+.custom-data-table {
+	tbody {
+			tr {
+				td:first-child {
+					max-width: 90px;
+					min-width: 90px;
+				}
+			}
+	}
+}

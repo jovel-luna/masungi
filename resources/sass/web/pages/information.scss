@@ -1,0 +1,92 @@
+/*=================================================================================
+|                            Information Kits Styling                             |
+=================================================================================*/
+.info-fr1 {
+
+	.page-grid.grid-3 {
+		grid-column-gap: 15px;
+		grid-row-gap: 15px;
+	}
+
+	.page__gridChild .page-grid__imgCon {
+		padding-top: 120%;
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+	.info-fr1 {
+
+		.width--90 {
+			width: 100%;
+		}
+
+		.page-general {
+			width: 100%;
+		}
+
+		.page-grid.grid-3 {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.info-fr1 {
+
+		.page-general.align-c {
+			text-align: left;
+		}
+
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.info-fr1 {
+
+		.page-container .page-innerFrame__title {
+			margin-bottom: 60px;
+
+			h1 {
+				position: relative;
+				padding: 0 40px;
+				margin-bottom: 0;
+
+				&::after {
+					position: absolute;
+					right: 30px;
+					top: 50%;
+				}
+
+				&::before {
+					position: absolute;
+					left: 30px;
+					top: 50%;
+				}
+			}
+		}
+
+		.page-grid.grid-3 {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}
+
+@media screen and (max-width: 320px) {
+
+	.info-fr1 {
+
+		.page-container .page-innerFrame__title {
+
+			h1 {
+				padding: 0px;
+			}
+		}
+	}
+}

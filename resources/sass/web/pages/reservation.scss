@@ -1,0 +1,1102 @@
+/*=================================================================================
+|                               Reservation Styling                               |
+=================================================================================*/
+.reservation-fr1 {
+	position: fixed;
+	z-index: 5;
+	top: 75px;
+	left: 0;
+	width: 100%;
+
+	p {
+		font-family: $font-secondary;
+		margin-top: 20px;
+		@extend %trans-ease;
+	}
+
+	.reservation-fr1__stepCon {
+		position: relative;
+		display: flex;
+		padding: 20px 0;
+		justify-content: space-around;
+
+		&::before {
+			position: absolute;
+			top: 24px;
+			left: 0;
+			right: 0;
+			display: block;
+			content: "";
+			width: 84%;
+			height: 1px;
+			margin: auto;
+			background-color: $color-gray;
+		}
+	}
+
+	.reservation-fr1__stepListCon {
+		position: relative;
+		flex: 1;
+		text-align: center;
+		color: $color-gray;
+		@extend %trans-ease;
+
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			display: block;
+			content: "";
+			width: 10px;
+			height: 10px;
+			margin: auto auto 10px;
+			border: 1px solid $color-gray;
+			background-color: $color-dullWhite;
+			transform: rotate(45deg);
+			@extend %trans-ease;
+		}
+
+		&.active {
+			color: $color-primary2;
+
+			&::after {
+				border: 1px solid $color-primary2;
+				background-color: $color-primary2;
+			}
+		}
+	}
+
+}
+.reservation__title {
+
+	h2 {
+		width: auto;
+		margin-bottom: 60px;
+		text-transform: uppercase;
+		color: $color-primary1;
+		overflow: hidden;
+		font-family: $font-tertiary;
+
+		&::before, &::after {
+			display: inline-block;
+			vertical-align: 6px;
+			content: '';
+			width: 100%;
+			height: 1px;
+			background-color: $color-gray;
+		}
+
+		&::before {
+			margin-left: -100%;
+			margin-right: 2rem;
+		}
+
+		&::after {
+			margin-right: -100%;
+			margin-left: 2rem;
+		}
+	}
+}
+
+
+.reservation-fr2 {
+	margin-top: 160px;
+
+	p {
+		font-family: $font-secondary;
+	}
+
+	.reservation-fr2__trailCard {
+		margin: 10px;
+		border: 1px solid $color-gray;
+		background-color: $color-dullWhite;
+
+		.reservation-fr2__imgCon {
+			width: 100%;
+			height: 100%;
+			@extend %bg-center-cover-nr;
+		}
+
+		h5 {
+			color: $color-gray;
+			margin-bottom: 5px;
+		}
+
+		.width--60 {
+			padding: 20px 20px 10px 40px;
+		}
+
+		.reservation-fr2__textCon {
+
+		}
+
+		.reservation-fr2__actionCon {
+
+			a {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.reservation-fr3 {
+
+	p {
+		font-family: $font-secondary;
+	}
+
+	.width--50 {
+
+		&:nth-child(1) {
+			padding-right: 2%;
+		}
+
+		&:nth-child(2) {
+			padding-left: 2%;
+		}
+	}
+
+	.reservation-fr3__label {
+		margin-top: 49px;
+		margin-bottom: 20px;
+		border: 1px solid $color-primary1;
+
+		p {
+			color: $color-primary1;
+			font-weight: bold;
+		}
+	}
+
+	.form__con {
+
+		.reservation-fr3__formLabel {
+			margin-bottom: 20px;
+		}
+
+		label {
+			margin-left: 10px;
+			vertical-align: 2px;
+		}
+	}
+
+	.reservation-fr3__buttonCon {
+		margin-top: 100px;
+	}
+}
+
+
+.reservation-fr4 {
+
+	h5 {
+		font-family: $font-tertiary;
+		color: $color-primary1;
+		margin-bottom: 20px;
+	}
+
+	p {
+		color: #636363;
+	}
+
+	input {
+		width: 100%;
+		padding: 0 3px;
+	}
+
+	select {
+		width: 100%;
+		padding: 3px;
+	}
+
+	.reservation-fr4__genCon {
+		margin-bottom: 50px;
+
+		.form__list {
+			// display: flex;
+			// flex-wrap: wrap;
+			// justify-content: space-between;
+
+			> div {
+				display: inline-block;
+				margin-right: 4.5%;
+				margin-bottom: 20px;
+
+				&:nth-child(3n) {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	.reservation-fr4__groupCon {
+		margin-bottom: 70px;
+
+		.reservation-fr4__grpLabelCon {
+			margin-bottom: 20px;
+
+			.reservation-fr4__grpLblImgCon {
+				width: 30px;
+				height: 30px;
+				background-color: $color-primary1;
+				border-radius: 50%;
+			}
+
+			img {
+				margin-top: 7px;
+				margin-left: 6px;
+			}
+
+			h5 {
+				margin-bottom: unset;
+			}
+		}
+
+		.reservation-fr4__grpMemCon {
+
+			.reservation-fr4__grpListCon {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				margin-bottom: 20px;
+
+				> * {
+					align-self: center;
+				}
+
+				> p {
+					width: 40px;
+				}
+
+				.form-group {
+					width: 15%;
+					padding-right: 2%;
+					margin-bottom: 0;
+				}
+
+				.form-group-cancel {
+					width: 16px;
+					height: 16px;
+
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+
+	.reservation-fr4__group1Con {
+
+		.reservation-fr4__grp1LeadCon {
+			margin-bottom: 70px;
+		}
+	}
+}
+
+
+.reservation-fr5 {
+
+	p {
+		font-family: $font-secondary;
+	}
+
+	.width--50 {
+
+		&:nth-child(1) {
+			padding-right: 5%;
+		}
+
+		&:nth-child(2) {
+			padding-left: 12%;
+		}
+
+		h2 {
+			margin-bottom: 40px;
+		}
+	}
+
+	.reservation-fr5__leftCon {
+
+		input {
+			vertical-align: top;
+			margin-right: 10px;
+			margin-top: 6px;
+		}
+
+		label {
+			width: 90%;
+			font-family: $font-secondary;
+		}
+	}
+
+	.reservation-fr5__paymentDetails {
+
+		.width--40, .width--60 {
+			vertical-align: top;
+
+			.type-red {
+				font-style: italic;
+				line-height: 2;
+				margin-bottom: 30px;
+			}
+		}
+
+		.inlineBlock-parent {
+			padding: 20px 0 10px;
+			border-bottom: 1px solid $color-gray;
+
+			&:first-child {
+				padding-top: 0;
+			}
+
+			&:last-child {
+				padding-bottom: 0;
+				border-bottom: unset;
+			}
+
+			p {
+				margin-bottom: 10px;
+			}
+
+			.z-margin-b {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.reservation-fr5__buttonCon {
+		margin-top: 50px;
+	}
+}
+
+
+.reservation-fr6 {
+
+	.page-frame {
+
+		* {
+			font-family: $font-secondary;
+		}
+
+		h2 {
+			font-family: $font-tertiary;
+			line-height: 2;
+		}
+
+		h5 {
+			font-weight: bold;
+			line-height: 2;
+		}
+
+		ol, ul {
+			padding-left: 20px;
+
+			li {
+				display: list-item;
+			}
+		}
+	}
+
+	.reservation-fr6__buttonCon {
+		margin-top: 50px;
+	}
+}
+
+
+.reservation-fr7 {
+	.width--70 {
+
+		* {
+			font-family: $font-secondary;
+		}
+
+		span {
+			font-weight: bold;
+			color: $color-primary2;
+		}
+
+		input {
+			margin-top: 5px;
+			margin-right: 20px;
+			flex: none;
+    		min-width: 20px;
+		}
+
+		.form-group {
+            display: flex;
+            margin-bottom: 20px;
+        }
+	}
+
+	.reservation-fr7__buttonCon {
+		margin-top: 50px;
+	}
+}
+
+
+.reservation-fr8 {
+	.width--100 {
+
+		* {
+			font-family: $font-secondary;
+		}
+
+		.width--50 {
+			vertical-align: top;
+		}
+
+		h5 {
+			font-weight: bold;
+			line-height: 2;
+			text-transform: uppercase;
+
+			span {
+				text-transform: none;
+			}
+		}
+
+		p {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		.inlineBlock-parent {
+			padding: 20px 0 10px;
+			border-bottom: 1px solid $color-gray;
+
+			&:first-child {
+				padding-top: 0;
+			}
+
+			&:last-child {
+				padding-bottom: 0;
+				border-bottom: unset;
+			}
+
+			h5, p {
+				margin-bottom: 10px;
+			}
+
+			.z-margin-b {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.reservation-fr8__leftCon {
+		padding: 0 5%;
+	}
+
+	.reservation-fr8__rightCon {
+		padding: 0 0 0 5%;
+
+		> .inlineBlock-parent {
+			margin-right: 10%;
+		}
+
+		.reservation-fr8__otherGuestCon {
+			display: none;
+
+			&.active {
+				display: block;
+			}
+		}
+	}
+
+	.reservation-fr8__selectCon {
+		position: relative;
+
+		> input {
+			display: none;
+		}
+
+		> p {
+			text-decoration: underline;
+		}
+
+		.selector {
+			position: absolute;
+			top: 3px;
+			right: -35px;
+			width: 20px;
+			height: 20px;
+			background-color: $color-primary1;
+			@extend %trans-ease;
+
+			&::before {
+				display: block;
+				content: '';
+				width: 10px;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-top: 7px solid $color-white;
+				margin-top: 7px;
+				margin-left: 5px;
+			}
+
+			&:hover {
+				filter: brightness(1.1);
+				cursor: pointer;
+			}
+		}
+		
+		ul {
+			position: absolute;
+			top: -10px;
+			right: -10px;
+			padding: 10px;
+			background-color: $color-dullWhite;
+			border: 1px solid $color-gray;
+			display: none;
+
+			li {
+
+				&:hover {
+					text-decoration: underline;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	.reservation-fr8__buttonCon {
+		font-family: $font-primary;
+		margin-top: 50px;
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+	.reservation__title h2 {
+
+		&::before, &::after {
+			display: none;
+		}
+	}
+
+	.reservation-fr2 {
+
+		.reservation__title h2 {
+			font-size: 2.692rem;
+
+			&::before, &::after {
+				display: block;
+			}
+		}
+
+		.width--90 {
+			width: 100%;
+		}
+
+		.reservation-fr2__trailCard {
+			margin: 10px 0;
+			border: none;
+
+			> * {
+				display: block;
+				width: 100%;
+			}
+
+			.width--40 {
+				height: 300px !important;
+			}
+
+			.width--60 {
+				padding: 30px 10px 50px;
+			}
+
+			.reservation-fr2__actionCon {
+
+				> * {
+					display: block;
+					width: 100%;
+					text-align: center;
+
+					&.width--50:first-child {
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+
+
+	.reservation-fr3 {
+
+		.width--90 {
+			width: 100%;
+		}
+
+		.width--100 {
+
+			.width--50 {
+				display: block;
+				width: 100%;
+
+				&:nth-child(1) {
+					padding-right: 0;
+					margin-bottom: 40px;
+				}
+
+				&:nth-child(2) {
+					padding-left: 0;
+				}
+			}
+		}
+
+		.cstm-calendar .calendar__label {
+			margin-left: 10px;
+		}
+
+		.reservation-fr3__buttonCon {
+			text-align: center;
+			margin-top: 50px;
+		}
+	}
+
+	.reservation-fr4 {
+
+		.width--90 {
+			width: 100%;
+		}
+
+		.reservation-fr4__genCon {
+
+			.form__list > div {
+				width: 48%;
+				margin-right: 2%;
+
+				&:nth-child(3n) {
+					margin-right: 2%;
+				}
+
+				&:nth-child(2n) {
+					margin-right: 0;
+				}
+			}
+		}
+
+		select {
+			padding-left: 0;
+		}
+
+		.reservation-fr4__groupCon {
+
+			.reservation-fr4__grpMemCon {
+
+				.reservation-fr4__grpListCon {
+					position: relative;
+					padding-left: 40px;
+
+					> p {
+						position: absolute;
+						top: 10px;
+						left: 0;
+					}
+
+					.form-group-cancel {
+						position: absolute;
+						top: 60px;
+						left: 0;
+					}
+
+					.form-group {
+						width: 30%;
+						padding: 0;
+						margin: 10px;
+					}
+				}
+			}
+		}
+
+		.reservation-fr4__grpNextCon {
+			text-align: center;
+		}
+	}
+
+	.reservation-fr5 {
+
+		.width--90 {
+			width: 100%;
+		}
+
+		.width--80 {
+			width: 100%;
+		}
+
+		.width--50:nth-child(2) {
+			padding-left: 5%;
+		}
+
+		.reservation-fr5__buttonCon {
+			text-align: center;
+		}
+	}
+
+	.reservation-fr6 {
+
+		.width--90 {
+			width: 100%;
+
+			.bg-dullWhite {
+				background-color: #fff;
+			}
+
+			.width--70 {
+				width: 100%;
+				padding: 0;
+			}
+		}
+
+		.reservation-fr6__buttonCon {
+			text-align: center;
+		}
+	}
+
+	.reservation-fr7 {
+
+		.width--90 {
+			width: 100%;
+		}
+
+		.width--70 {
+			width: 100%;
+
+			.form-group {
+				justify-content: unset;
+			}
+		}
+
+		.reservation-fr7__buttonCon {
+			text-align: center;
+		}
+	}
+
+	.reservation-fr8 {
+
+		.width--90 {
+			width: 100%;
+		}
+
+		.reservation-fr8__leftCon {
+			padding-left: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 990px) {
+
+	.reservation-fr1 {
+
+		.slick-list {
+			padding: 0 !important;
+		}
+
+		.reservation-fr1__stepCon {
+			width: 90%;
+			margin: auto;
+
+			&::before {
+				display: none;
+			}
+
+			.slick-center .reservation-fr1__stepListCon {
+				p {
+					opacity: 1;
+				}
+			}
+		}
+
+		.reservation-fr1__stepListCon {
+			padding-top: 10px;
+
+			&::before {
+				position: absolute;
+				top: 14px;
+				right: -50%;
+				display: block;
+				content: "";
+				width: 100%;
+				height: 1px;
+				background-color: #AEAEAE;
+			}
+
+			&::after {
+				top: 10px;
+			}
+
+			&:last-child {
+
+				&::before {
+					display: none;
+				}
+			}
+
+			p {
+				opacity: 0;
+				margin: 20px -50% 0;
+				white-space: nowrap;
+			}
+		}
+
+		.slick-next {
+			right: -8%;
+		}
+
+		.slick-prev {
+			left: -8%;
+		}
+	}
+
+	.reservation-fr3 .cstm-calendar .fc-bg .mobile-active {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			content: '';
+			width: 100%;
+			height: 25px;
+			background-color: rgba($color-primary2, 0.3);
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.reservation__title h2 {
+		margin-bottom: 40px;
+	}
+
+	.reservation-fr2 {
+
+		.width--50 {
+			width: 100%;
+
+			&:nth-child(2n-1), &:nth-child(2n) {
+				padding: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.reservation-fr2__trailCard {
+			
+			.width--33 {
+				display: block;
+				width: 100%;
+				margin-bottom: 20px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.reservation-fr4 .reservation-fr4__groupCon .reservation-fr4__grpMemCon .reservation-fr4__grpListCon {
+
+		.form-group {
+			width: 44%;
+		}
+	}
+
+	.reservation-fr5 {
+
+		.width--50 {
+
+			h2 {
+				margin-bottom: 10px;
+			}
+
+			&:nth-child(1) {
+				width: 100%;
+				padding: 0;
+				margin-bottom: 40px;
+			}
+
+			&:nth-child(2) {
+				width: 100%;
+				padding: 0;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.reservation-fr8 {
+
+		.width--90 {
+			width: 100%;
+		}
+
+		.reservation-fr8__leftCon {
+			width: 100%;
+			padding: 0;
+			margin-bottom: 50px;
+		}
+
+		.reservation-fr8__rightCon {
+			width: 100%;
+			padding: 0;
+
+			> .inlineBlock-parent {
+				margin-right: 0;
+			}
+
+			.reservation-fr8__selectCon {
+
+				p {
+					padding-right: 35px;
+				}
+
+				.selector {
+					right: 0;
+				}
+
+				ul {
+					right: 25px;
+				}
+			}
+		}
+
+		.reservation-fr8__buttonCon {
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	.reservation-fr3 {
+
+		.form__con {
+
+			> * {
+				width: 100%;
+			}
+		}
+
+		.cstm-calendar th.fc-day-header.fc-widget-header::after {
+			font-size: 7px;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.reservation-fr4 .reservation-fr4__groupCon .reservation-fr4__grpMemCon .reservation-fr4__grpListCon {
+
+		.form-group {
+			width: 100%;
+		}
+	}
+
+	.reservation-fr4 {
+
+		.reservation-fr4__genCon {
+
+			.form__list > div {
+				width: 100%;
+				margin-right: 0%;
+
+				&:nth-child(3n) {
+					margin-right: 0;
+				}
+
+				&:nth-child(2n) {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 320px) {
+
+	.reservation-fr2 {
+
+		.reservation-fr2__trailCard {
+
+			.width--40 {
+				height: 200px !important;
+			}
+		}
+	}
+
+
+	.reservation-fr3 {
+
+		.form__con {
+
+			> * {
+				width: 50%;
+			}
+		}
+
+		.cstm-calendar th.fc-day-header.fc-widget-header {
+
+			&::after {
+				font-size: 7px;
+			}
+
+			&.fc-sun {
+
+				&::after {
+					content: 'Sun';
+				}
+			}
+
+			&.fc-mon {
+				
+				&::after {
+					content: 'Mon';
+				}
+			}
+
+			&.fc-tue {
+				
+				&::after {
+					content: 'Tue';
+				}
+			}
+
+			&.fc-wed {
+				
+				&::after {
+					content: 'Wed';
+				}
+			}
+
+			&.fc-thu {
+				
+				&::after {
+					content: 'Thu';
+				}
+			}
+
+			&.fc-fri {
+				
+				&::after {
+					content: 'Fri';
+				}
+			}
+
+			&.fc-sat {
+				
+				&::after {
+					display: block;
+					content: 'Sat';
+				}
+			}
+		}
+	}
+}

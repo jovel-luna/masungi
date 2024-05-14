@@ -1,0 +1,55 @@
+/*=================================================================================
+|                                Gallery Styling                                  |
+=================================================================================*/
+.gallery-fr2 {
+	padding-top: 0;
+
+	.slick-prev {
+		top: 37vh;
+	}
+
+	.slick-next {
+		top: 37vh;
+	}
+
+	.event__tabChild {
+		padding-bottom: 0;
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+	.gallery-fr1 {
+		padding-bottom: 0;
+	}
+
+	.gallery-fr2 {
+		padding-top: 0;
+
+		.event-fr2__sliderCon .slick-arrow {
+			display: none !important;
+		}
+
+		.event-fr2__sliderCon {
+
+			.width--80.page-general {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.gallery-fr1 {
+		padding-bottom: 0;
+	}
+
+	.gallery-fr2 {
+		padding-top: 0;
+	}
+}

@@ -1,0 +1,340 @@
+/*=================================================================================
+|                                  Header Styling                                 |
+=================================================================================*/
+header {
+	background: unset;
+	background-color: #4F4A44;
+	border-bottom: 5px solid $color-primary1;
+	@extend %trans-ease;
+
+	&.desktop .nav-item:hover .nav-sub {
+		display: block;
+	}
+
+	&::before {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		display: block;
+		content: "";
+		width: 100%;
+		height: 3px;
+		background-color: $color-white;
+		opacity: 1;
+	}
+
+	.navbar-expand-lg .navbar-nav {
+		align-items: center;
+	}
+
+	.navbar-toggler {
+		display: none;
+	}
+
+	.navbar {
+		padding: 5px 5%;
+		@extend %trans-ease;
+
+		> button {
+			position: relative;
+
+			span::after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 10%;
+				width: 25px;
+				height: 3px;
+				vertical-align: 8px;
+				background-color: $color-white;
+				box-shadow: 0 8px $color-white, 0 16px $color-white;
+				@extend %trans-ease;
+			}
+
+			&[aria-expanded="true"] {
+
+				span {
+					position: relative;
+
+					&:before, &:after {
+						content: "";
+						display: block;
+						position: absolute;
+						top: 50%;
+						left: -10px;
+						width: 45px;
+						height: 1px;
+						margin-right: 20px;
+						background-color: $color-white;
+					}
+
+					&:before {
+						transform: rotate(-45deg);
+					}
+
+					&:after {
+						transform: rotate(45deg);
+						vertical-align: 0;
+						box-shadow: 0 8px transparent, 0 16px transparent;
+					}
+				}
+			}
+		}
+	}
+
+	.navbar-brand {
+
+		img {
+			position: relative;
+			top: 3px;
+			height: 45px;
+			@extend %trans-ease;
+		}
+	}
+
+	.nav-item {
+		position: relative;
+
+		&:hover {
+
+			.nav-link, .nav-link.active {
+				color: $color-white;
+				cursor: pointer;
+			}
+
+			.nav-link:not([href])::after {
+				border-right: 1px solid $color-white;
+				border-bottom: 1px solid $color-white;
+			}
+		}
+
+		> .to-mob {
+			display: block;
+		}
+
+		&.booking {
+			display: none;
+		}
+	}
+
+	.nav-link {
+		position: relative;
+		margin: 0 12px;
+		font-size: $font-size-smaller;
+		color: $color-white;
+		text-transform: uppercase;
+		@extend %trans-ease;
+
+		&:not([href])::after {
+			display: inline-block;
+			content: "";
+			width: 5px;
+			height: 5px;
+			margin-left: 5px;
+			vertical-align: 3px;
+			border-right: 1px solid $color-primary4;
+			border-bottom: 1px solid $color-primary4;
+			transform: rotateZ(45deg) rotateX(0deg);
+			@extend %trans-ease;
+		}
+
+		&.active, &.focus {
+			color: $color-white;
+
+			&:not([href])::after {
+				vertical-align: 0px;
+				border-right: 1px solid $color-white;
+				border-bottom: 1px solid $color-white;
+				transform: rotateZ(-45deg) rotateX(180deg);
+			}
+		}
+	}
+
+	.nav-sub {
+		position: absolute;
+		top: 40px;
+		left: 50%;
+		display: none;
+		min-width: 160px;
+		height: auto;
+		overflow: hidden;
+		text-transform: uppercase;
+		background-color: $color-white;
+		box-shadow: 0 0 4px rgba(0,0,0,0.25);
+		white-space: nowrap;
+		transform: translateX(-50%);
+		@extend %trans-ease;
+
+		.to-mob {
+			display: none;
+		}
+	}
+
+	.nav-subLink {
+		line-height: 32px;
+		padding: 5px 10px;
+		margin-bottom: 5px;
+		text-transform: capitalize;
+		color: #636363;
+		@extend %trans-ease;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			background-color: $color-primary1;
+			color: $color-white;
+		}
+	}
+
+	.button {
+		margin-left: 30px;
+		padding: 7px 15px;
+	}
+
+	&.changeHeader {
+		background: rgba(0,0,0,1);
+		background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)),  color-stop(100%, rgba(255,255,255,0)));
+		background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+		background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+		background: -ms-linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=0 );
+		border-bottom: 0px solid $color-primary1;
+
+		&::before {
+			height: 1px;
+			bottom: 5px;
+			opacity: 0.5;
+		}
+
+		.navbar {
+			padding: 20px 5% 10px;
+		}
+
+		.navbar-brand {
+
+			img {
+				height: 55px;
+			}
+		}
+	}
+
+	&.active {
+		background: unset;
+		background-color: #4F4A44;
+		border-bottom: 5px solid $color-primary1;
+	}
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+
+	header {
+
+		.nav-item > .to-mob {
+			display: none;
+		}
+
+		.nav-sub .to-mob {
+			display: block;
+		}
+	}
+
+}
+
+@media screen and (max-width: 990px) {
+
+	header {
+
+		&.changeHeader::before {
+			opacity: 0;
+		}
+
+		&.active {
+
+			&::before {
+				height: 1px;
+				bottom: 5px;
+				opacity: 0;
+			}
+
+			.navbar {
+				height: 100vh;
+				padding: 20px 5% 10px;
+				align-content: start;
+				overflow: auto;
+			}
+
+			.navbar-brand {
+
+				img {
+					height: 55px;
+				}
+			}
+
+		}
+
+		.nav-item {
+			margin-bottom: 10px;
+
+			> .to-mob {
+				display: block;
+			}
+
+			&.booking {
+				display: block;
+			}
+		}
+
+		.nav-booking {
+			display: none;
+		}
+
+		.navbar-nav {
+			display: block;
+			margin-top: 40px;
+		}
+
+		.nav-link {
+			font-size: 28px;
+			color: $color-white;
+			font-family: $font-tertiary;
+			margin: auto;
+
+			&:not([href])::after {
+				width: 10px;
+				height: 10px;
+				border-color: $color-white;
+				margin-left: 10px;
+			}
+		}
+
+		.nav-subLink {
+			color: $color-white;
+			font-family: $font-secondary;
+			font-size: $font-size-large;
+			padding: 5px 0;
+		}
+
+		.nav-sub {
+			position: unset;
+			background-color: transparent;
+			box-shadow: unset;
+			transform: translateX(0);
+
+			.to-mob {
+				display: none;
+			}
+		}
+
+		.button {
+			margin-left: unset;
+			margin-top: 30px;
+		}
+	}
+}

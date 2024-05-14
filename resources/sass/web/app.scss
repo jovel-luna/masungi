@@ -1,0 +1,27 @@
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';
+@import '../helpers/fullcalendar.css';
+
+
+@import '../../font/perpetua/stylesheet.css';
+@import '../../font/opensans/stylesheet.css';
+
+
+@import '../helpers/variable.scss';
+@import '../helpers/reset.scss';
+@import '../helpers/mixins.scss';
+@import '../helpers/helper.scss';
+@import '../helpers/transitions.scss';
+@import '../helpers/daterangepicker.css';
+@import '../helpers/bootstrap-datepicker.min.scss';
+@import '../helpers/twentytwenty.scss';
+
+
+@import 'general.scss';
+
+@import 'styles.scss';
+@import 'mobile.scss';
+
+html {
+    font-size: 14px;
+}

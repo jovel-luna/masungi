@@ -1,0 +1,156 @@
+/*=================================================================================
+|                                  Projects Styling                               |
+=================================================================================*/
+.projects-fr1 {
+
+	.page-general {
+
+		.projects-fr1__imgCon {
+			width: 100%;
+			height: 100px;
+			margin-bottom: 15px;
+			filter: grayscale(1);
+			@extend %bg-center-contain-nr;
+			background-position: left;
+			@extend %trans-ease;
+		}
+	}
+
+	.page-grid {
+		position: relative;
+
+		&.grid-2 {
+			grid-column-gap: 0px;
+			grid-row-gap: 0px;
+		}
+
+		&::after {
+			position: absolute;
+			bottom: -1px;
+			left: 0px;
+			content: "";
+			display: block;
+			height: 3px;
+			width: 100%;
+			background-color: $color-white;
+		}
+	}
+
+	.page__gridChild {
+		position: relative;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		overflow: unset;
+		border-bottom: 1px solid $color-lightestGray;
+
+		&::after {
+			position: absolute;
+			top: 0;
+			right: -2px;
+			content: "";
+			display: block;
+			height: 100%;
+			width: 1px;
+			background-color: $color-lightestGray;
+		}
+
+		&:nth-child(2n - 1) {
+			padding-right: 70px;
+		}
+
+		&:nth-child(2n) {
+			padding-left: 70px;
+
+			&::after {
+				display: none;
+			}
+		}
+
+		&:hover {
+
+			.projects-fr1__imgCon {
+				filter: grayscale(0);
+			}
+		}
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+	.projects-fr1 {
+
+		.width--90 {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.projects-fr1 {
+
+		.page-grid.grid-2 {
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+		.page__gridChild {
+
+			&::after {
+				display: none;
+			}
+
+			&:nth-child(2n - 1) {
+				padding-right: 0px;
+			}
+
+			&:nth-child(2n) {
+				padding-left: 0px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	.projects-fr1 {
+
+		.page-container .page-innerFrame__title {
+			margin-bottom: 60px;
+
+			h1 {
+				position: relative;
+				padding: 0 40px;
+				margin-bottom: 0;
+
+				&::after {
+					position: absolute;
+					right: 30px;
+					top: 50%;
+				}
+
+				&::before {
+					position: absolute;
+					left: 30px;
+					top: 50%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 320px) {
+
+	.projects-fr1 {
+
+		.page-container .page-innerFrame__title {
+
+			h1 {
+				padding: 0;
+			}
+		}
+	}
+}

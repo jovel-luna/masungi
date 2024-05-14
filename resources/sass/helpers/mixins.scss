@@ -1,0 +1,25 @@
+/*=================================================================================
+|                                      MIXINS                                     |
+=================================================================================*/
+
+%bg-center-contain-nr {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+%bg-center-cover-nr {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+%trans-ease {
+	transition: all 0.3s ease;
+}
+
+%appearance {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+			appearance: none;
+}
